@@ -1,25 +1,48 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="11" x="61" y="26">
+  <block type="movement_forward" id="1" x="61" y="26">
     <next>
-      <block type="movement_forward" id="21">
+      <block type="robot_delay" id="11" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="18">
+            <field name="NUM">2000</field>
+          </block>
+        </value>
         <next>
-          <block type="movement_forward" id="32">
+          <block type="movement_forward" id="2">
             <next>
-              <block type="movement_right" id="43">
+              <block type="robot_delay" id="20" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="27">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="movement_right" id="55">
+                  <block type="movement_forward" id="3">
                     <next>
-                      <block type="movement_right" id="65">
+                      <block type="robot_delay" id="30" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="37">
+                            <field name="NUM">2000</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="movement_stop" id="75">
+                          <block type="movement_right" id="4">
                             <next>
-                              <block type="movement_reverse" id="85">
+                              <block type="movement_right" id="5">
                                 <next>
-                                  <block type="movement_reverse" id="95">
+                                  <block type="movement_right" id="6">
                                     <next>
-                                      <block type="movement_reverse" id="105">
+                                      <block type="movement_stop" id="7">
                                         <next>
-                                          <block type="robot_delay" id="136" inline="true"></block>
+                                          <block type="movement_reverse" id="8">
+                                            <next>
+                                              <block type="movement_reverse" id="9">
+                                                <next>
+                                                  <block type="movement_reverse" id="10"></block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
                                         </next>
                                       </block>
                                     </next>
